@@ -1,0 +1,15 @@
+assemble:
+  - from: batch
+    into: batch
+m9a28-email-batch-object-definition:
+  oAuthApplicationHeadlessServer: m9a28-email-batch-object-definition-oauth-application-headless-server
+  name: Email Batch Object Definition
+  type: batch
+m9a28-email-batch-object-definition-oauth-application-headless-server:
+  .serviceAddress: localhost:8080
+  .serviceScheme: http
+  name: Email Batch OAuth Application Headless Server
+  scopes:
+    - Liferay.Headless.Batch.Engine.everything
+    - Liferay.Object.Admin.REST.everything
+  type: oAuthApplicationHeadlessServer

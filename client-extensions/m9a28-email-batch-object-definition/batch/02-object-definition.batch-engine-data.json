@@ -1,0 +1,339 @@
+{
+	"configuration": {
+		"className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "UPSERT",
+			"importStrategy": "ON_ERROR_FAIL",
+			"taskItemDelegateName": "DEFAULT",
+			"updateStrategy": "UPDATE"
+		}
+	},
+	"items": [
+		{
+			"enableComments": false,
+			"objectRelationships": [],
+			"objectFolderExternalReferenceCode": "default",
+			"enableCategorization": true,
+			"accountEntryRestrictedObjectFieldName": "",
+			"objectActions": [
+				{
+					"conditionExpression": "",
+					"objectActionExecutorKey": "function#intranet-email-etc-spring-boot-fetch-recent-emails",
+					"errorMessage": {
+						"en_US": "Not fetched"
+					},
+					"active": true,
+					"description": "",
+					"label": {
+						"en_US": "Fetch Emails"
+					},
+					"externalReferenceCode": "5cb0292f-c2ed-84ac-7476-6c7ef5f2793d",
+					"system": false,
+					"objectActionTriggerKey": "standalone",
+					"name": "fetchEmails",
+					"parameters": {},
+					"status": {
+						"label_i18n": "Never Ran",
+						"code": 0,
+						"label": "never-ran"
+					}
+				}
+			],
+			"enableLocalization": false,
+			"accountEntryRestricted": false,
+			"externalReferenceCode": "M9A28_EMAIL",
+			"objectFields": [
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Author"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "a7e5eb38-ffb2-ff32-bae5-e67fe6d94031",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "creator",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Create Date"
+					},
+					"type": "Date",
+					"required": false,
+					"externalReferenceCode": "2770b7f9-eb5f-7cf1-6301-742f370babec",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "createDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "External Reference Code"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "44ff5f90-2c85-cc65-2a63-7732dd89c7f5",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "externalReferenceCode",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Long",
+					"label": {
+						"en_US": "ID"
+					},
+					"type": "Long",
+					"required": false,
+					"externalReferenceCode": "95e1bcf6-8004-403d-f39d-cc7494b457da",
+					"indexedAsKeyword": true,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "id",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Modified Date"
+					},
+					"type": "Date",
+					"required": false,
+					"externalReferenceCode": "ceccb96d-52a3-25c4-51e9-37171dbc652a",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "modifiedDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Status"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "fd3eb222-2b46-8f85-8c26-d291bb2e6ba7",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "status",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Subject"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "7ac50ee1-7f83-2be1-fa46-bc993b34e794",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "subject",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "From"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "4dfbe7c7-e90d-f8d3-200b-3c94692d19fb",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "from",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [
+						{
+							"name": "timeStorage",
+							"value": "convertToUTC"
+						}
+					],
+					"readOnly": "false",
+					"DBType": "DateTime",
+					"label": {
+						"en_US": "Sent Date"
+					},
+					"type": "DateTime",
+					"required": false,
+					"externalReferenceCode": "ef813916-876e-d3b9-0c69-64bc8f76d25b",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "sentDate",
+					"state": false,
+					"businessType": "DateTime",
+					"readOnlyConditionExpression": ""
+				}
+			],
+			"restContextPath": "/o/c/emails",
+			"scope": "company",
+			"portlet": true,
+			"modifiable": true,
+			"parameterRequired": false,
+			"enableObjectEntryHistory": false,
+			"titleObjectFieldName": "subject",
+			"objectValidationRules": [],
+			"active": true,
+			"defaultLanguageId": "en_US",
+			"label": {
+				"en_US": "Email"
+			},
+			"panelCategoryKey": "applications_menu.applications.custom.apps",
+			"pluralLabel": {
+				"en_US": "Emails"
+			},
+			"objectLayouts": [],
+			"system": false,
+			"objectViews": [
+				{
+					"objectDefinitionExternalReferenceCode": "M9A28_EMAIL",
+					"name": {
+						"en_US": "List"
+					},
+					"objectViewFilterColumns": [],
+					"objectViewSortColumns": [
+						{
+							"objectFieldName": "createDate",
+							"sortOrder": "desc",
+							"priority": 0
+						}
+					],
+					"defaultObjectView": true,
+					"objectViewColumns": [
+						{
+							"objectFieldName": "id",
+							"label": {
+								"en_US": "ID"
+							},
+							"priority": 0
+						},
+						{
+							"objectFieldName": "sentDate",
+							"label": {
+								"en_US": "Sent Date"
+							},
+							"priority": 1
+						},
+						{
+							"objectFieldName": "from",
+							"label": {
+								"en_US": "From"
+							},
+							"priority": 2
+						},
+						{
+							"objectFieldName": "subject",
+							"label": {
+								"en_US": "Subject"
+							},
+							"priority": 3
+						},
+						{
+							"objectFieldName": "status",
+							"label": {
+								"en_US": "Status"
+							},
+							"priority": 4
+						},
+						{
+							"objectFieldName": "createDate",
+							"label": {
+								"en_US": "Sync Date"
+							},
+							"priority": 5
+						}
+					]
+				}
+			],
+			"enableObjectEntryDraft": false,
+			"name": "Email",
+			"storageType": "default",
+			"actions": {
+				"permissions": {},
+				"get": {},
+				"update": {},
+				"delete": {},
+				"exportObjectDefinition": {}
+			},
+			"status": {
+				"label_i18n": "Approved",
+				"code": 0,
+				"label": "approved"
+			}
+		}
+	]
+}

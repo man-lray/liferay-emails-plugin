@@ -1,0 +1,20 @@
+assemble:
+    - fromTask: bootJar
+intranet-email-etc-spring-boot-oauth-application-user-agent:
+    .serviceAddress: localhost:58082
+    .serviceScheme: http
+    name: Intranet Email Etc Spring Boot OAuth Application User Agent
+    scopes:
+        - Liferay.Headless.Admin.Workflow.everything
+        - c_email.everything
+    type: oAuthApplicationUserAgent
+intranet-email-etc-spring-boot-fetch-recent-emails:
+    name: Intranet Email Etc Spring Boot Fetch Recent Emails
+    oAuth2ApplicationExternalReferenceCode: intranet-email-etc-spring-boot-oauth-application-user-agent
+    resourcePath: /emails/fetch-recent
+    type: objectAction
+intranet-email-etc-spring-boot-workflow-update-status:
+    name: Intranet Email Etc Spring Boot Workflow Update Status
+    oAuth2ApplicationExternalReferenceCode: intranet-email-etc-spring-boot-oauth-application-user-agent
+    resourcePath: /workflow/update/status
+    type: workflowAction
